@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+;
+
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    border: 0;
+    font-family:"Poppins" , sans-serif;
+    text-decoration: none;
+    
+    
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+
+body{
+    background: linear-gradient(45deg , rgb(75, 134, 245), rgb(8, 42, 117))
+    ;background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.452);
+    border-radius: 8px;
+}
+
+main h1 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+
+
+main h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background:linear-gradient(45deg , rgb(75, 134, 245), rgb(8, 42, 117)) ;
+}
+
+.input-field{
+    position: relative;
+}
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+    
+}
+.input-field input::placeholder{
+    color: rgba(105, 104, 104, 0.397);
+
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.014);
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+background:linear-gradient(45deg , rgb(75, 134, 245), rgb(8, 42, 117)) ;
+transform:scaleX(0);
+transition: all .3s ease-in-out;
+transform-origin: left;
+}
+
+.input-field input:focus ~.underline::after{
+    transform:scaleX(1)
+
+}
+
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    background: linear-gradient(45deg , rgb(75, 134, 245), rgb(8, 42, 117)) ;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background:linear-gradient(45deg , rgb(8, 42, 117),rgb(75, 134, 245)) ;
+    
+}
+
+.footer span{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-size:12pt;
+
+}
+
+.social-fields{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    
+    font-size: 0.85rem;
+    
+}
+.social-field-twitter{
+    margin-bottom: 10px;
+    padding: 0.4rem;
+    background-color: #56a7f2;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    
+}
+.social-field-twitter:hover{
+
+    letter-spacing: 0.5px;
+}
+.social-field-twitter a{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+}
+
+.social-field-facebook a{
+    color: #fff;
+    
+}
+
+.input-field:first-child{
+    margin-bottom:1.5rem
+}
+
+.social-field-facebook{
+    border-radius: 4px;
+    padding: 0.4rem;
+    background-color: #3b5998;
+    transition: all 0.3s ease;
+
+}
+
+.social-field-facebook:hover{
+    letter-spacing: 0.3px;
+}
